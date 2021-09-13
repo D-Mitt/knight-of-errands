@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pickup_crown_2.wav-cbd4354be6ea96b07c602d970a31e252.sample"
+
+[deps]
+
+source_file="res://audio/pickup_crown_2.wav"
+dest_files=[ "res://.import/pickup_crown_2.wav-cbd4354be6ea96b07c602d970a31e252.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

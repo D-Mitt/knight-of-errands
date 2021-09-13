@@ -6,7 +6,7 @@ func _ready():
 	hide()
 	set_process(false)
 	get_node("Player").set_process(false)
-	get_node("Player").set_physics_process(false)
+	get_node("Player").set_process_input(false)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -15,5 +15,4 @@ func _ready():
 
 
 func _on_Player_completed_level():
-	print("123354234873653487")
 	emit_signal("completed_level")

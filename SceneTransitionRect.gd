@@ -25,19 +25,19 @@ func transition_to(to_hide, to_show) -> void:
 	
 func hide_scene(to_hide):
 	to_hide.set_process(false)
-	to_hide.set_physics_process(false)
+	to_hide.set_process_input(false)
 	to_hide.hide()
 	#stop player movement and processing
 	if to_hide.is_in_group("dungeon"):
 		to_hide.get_node("Player").set_process(false)
-		to_hide.get_node("Player").set_physics_process(false)
+		to_hide.get_node("Player").set_process_input(false)
 	
 func show_scene(to_show):
 	to_show.set_process(true)
-	to_show.set_physics_process(true)
+	to_show.set_process_input(true)
 	to_show.show()
 	
 	#If showing dungeon, stop player movement while transitioning
 	if to_show.is_in_group("dungeon"):
 		to_show.get_node("Player").set_process(true)
-		to_show.get_node("Player").set_physics_process(true)
+		to_show.get_node("Player").set_process_input(true)
