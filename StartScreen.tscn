@@ -1,3 +1,57 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://StartScreen.gd" type="Script" id=1]
+[ext_resource path="res://UI/UI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/AnimationPlayer.gd" type="Script" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Sleep"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 6, 8, 12, 16, 20 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0.498039 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0.498039 ), Color( 0, 1, 0, 0 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
 
 [node name="StartScreen" type="Node2D"]
+script = ExtResource( 1 )
+talk_id = "opening_scene"
+
+[node name="UI" parent="." instance=ExtResource( 2 )]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+modulate = Color( 0, 1, 0, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/ColorRect"]
+anims/Sleep = SubResource( 1 )
+script = ExtResource( 3 )
+
+[connection signal="animation_finished" from="CanvasLayer/ColorRect/AnimationPlayer" to="CanvasLayer/ColorRect/AnimationPlayer" method="_on_animation_finished"]

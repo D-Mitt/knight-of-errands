@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/wall_collide.wav-c3b527959de2e94fa5ddb395dbe6f6ef.sample"
+path="res://.import/wall_collide.wav-dadfb3d4c8daef51c7cf815e9306c648.sample"
 
 [deps]
 
-source_file="res://audio/wall_collide.wav"
-dest_files=[ "res://.import/wall_collide.wav-c3b527959de2e94fa5ddb395dbe6f6ef.sample" ]
+source_file="res://Audio/wall_collide.wav"
+dest_files=[ "res://.import/wall_collide.wav-dadfb3d4c8daef51c7cf815e9306c648.sample" ]
 
 [params]
 

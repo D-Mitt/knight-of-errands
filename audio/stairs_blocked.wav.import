@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/stairs_blocked.wav-bff11af459cec83fac66e8a42ec9511b.sample"
+path="res://.import/stairs_blocked.wav-ddcb5b5ef0a99019cae9e4ea88ac4f8d.sample"
 
 [deps]
 
-source_file="res://audio/stairs_blocked.wav"
-dest_files=[ "res://.import/stairs_blocked.wav-bff11af459cec83fac66e8a42ec9511b.sample" ]
+source_file="res://Audio/stairs_blocked.wav"
+dest_files=[ "res://.import/stairs_blocked.wav-ddcb5b5ef0a99019cae9e4ea88ac4f8d.sample" ]
 
 [params]
 
