@@ -142,7 +142,7 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=10]Oh yes.|| I require your aid -|| gather your courage for the journey,| vanquish the evil that lurks below,| rise to your place among the Hall of the Greats,| and return the CROWN||........What say you?||[/shake]"
+      "[shake rate=10 level=10]Oh yes.|| I require your aid -|| gather your courage for the journey,| vanquish the evil that lurks below,| ascend to the place of honor among the Hall of the Greats,| and return the CROWN||........What say you?||[/shake]"
     ],
     "choices": [
       {
@@ -153,6 +153,9 @@
         "text": "Can you repeat that? I wasn't paying attention...",
         "next": "boring_spiel_decline"
       }
+    ],
+    "action": [
+      "play_anim Sleep"
     ]
   },
   "boring_spiel_accept": {
@@ -208,5 +211,87 @@
       "[shake rate=10 level=10]Onward, stalwart knight!|[/shake]"
     ],
     "next": "end"
+  },
+
+  "king_praise_1": {
+    "name": "King",
+    "icon": "king",
+    "voice": "king",
+    "text": [
+      "[shake rate=10 level=10]O valiant knight! Thou bested the foul beasts from below,| and in such quick manner!||| Our kingdom will forever know the journey you took on this day.|[/shake]"
+    ],
+    "next": "king_praise_2"
+  },
+  "king_praise_2": {
+    "name": "King",
+    "icon": "king",
+    "voice": "king",
+    "text": [
+      "[shake rate=10 level=10]As thanks,| please except this lucky coin I found in my courtyard this morning! Don't spend it all in one place,||| ho| ho!|[/shake]"
+    ],
+    "next": "king_praise_3"
+  },
+  "king_praise_3": {
+    "name": "King",
+    "icon": "king",
+    "voice": "king",
+    "text": [
+      "[shake rate=10 level=10]This reminds me of the time when,| as a new recruit, |I was tasked with hunting down a bear....|....Did I mention it was the second week of the month so the lunar festival was about to begin.......|........|Honey as far as the eye could see|[/shake]"
+    ],
+    "choices": [
+      {
+        "text": "Go on...",
+        "next": "king_praise_4"
+      },
+      {
+        "text": "I can't take this, I'm ending the game.",
+        "next": "end"
+      }
+    ],
+    "action": [
+      "play_anim Sleep"
+    ]
+  },
+  "king_praise_4": {
+    "name": "King",
+    "icon": "king",
+    "voice": "king",
+    "text": [
+      "[shake rate=10 level=10]The night was filled with whimsy......|..........I was 40 years young,| ho| ho........|...... Suddenly skeleton mages surrounded us......|........I had a tummy ache that night,| but I still ate the entire pie! |||HO HO!|[/shake]"
+    ],
+    "choices": [
+      {
+        "text": "Wow, look at the time...",
+        "next": "king_praise_5"
+      },
+      {
+        "text": "I can't take this, I'm ending the game.",
+        "next": "end"
+      }
+    ],
+    "action": [
+      "play_anim Sleep"
+    ]
+  },
+  "king_praise_5": {
+    "name": "King",
+    "icon": "king",
+    "voice": "king",
+    "text": [
+      "[shake rate=10 level=10]It had the aroma of pigs feet and rotting pumpkins......|.........At that time I came across an acient rune with great power........|......Then I ate the bowl!......|........WELL DONE,| YOU ARE A TRUE GAMER!|[/shake]"
+    ],
+    "choices": [
+      {
+        "text": "I'm taking notes, say it slower this time!",
+        "next": "king_praise_1"
+      },
+      {
+        "text": "I can't take this, I'm ending the game.",
+        "next": "end"
+      }
+    ],
+    "action": [
+      "play_anim Sleep"
+    ]
   }
 }

@@ -17,3 +17,5 @@ func _on_Introduction_intro_completed():
 func _on_Dungeon_completed_level():
 	_transition_rect.transition_to(get_node("Dungeon"), get_node("EndingScreen"))
 
+func _on_EndingScreen_ending_completed():
+	_transition_rect.transition_to(get_node("EndingScreen"), get_node("StartScreen"))
