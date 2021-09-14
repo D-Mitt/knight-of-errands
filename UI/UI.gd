@@ -19,3 +19,7 @@ func start_dialog(index, dialog_style = "black"):
 
 func _on_dialog_ended(text_id):
 	emit_signal("dialog_ended", text_id)
+
+
+func _on_DialogBlack_dialog_ended(text_id):
+	pass # Replace with function body.

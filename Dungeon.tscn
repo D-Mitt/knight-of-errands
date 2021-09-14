@@ -561,7 +561,6 @@ tile_data = PoolIntArray( -65532, 0, 3, -65531, 0, 131073, -65530, 0, 4, -65529,
 "Stairs",
 ] instance=ExtResource( 5 )]
 position = Vector2( 14.4, 43.2 )
-scale = Vector2( 1, 1 )
 script = ExtResource( 6 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Stairs"]

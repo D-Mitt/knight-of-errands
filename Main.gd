@@ -9,9 +9,11 @@ func _ready():
 
 
 func _on_StartScreen_game_started():
-	_transition_rect.transition_to(get_node("StartScreen"), get_node("Dungeon"))
+	_transition_rect.transition_to(get_node("StartScreen"), get_node("Introduction"))
 	
-
+func _on_Introduction_intro_completed():
+	_transition_rect.transition_to(get_node("Introduction"), get_node("Dungeon"))
 
 func _on_Dungeon_completed_level():
 	_transition_rect.transition_to(get_node("Dungeon"), get_node("EndingScreen"))
+

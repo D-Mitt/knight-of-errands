@@ -42,4 +42,6 @@ animation = "king"
 [node name="Next" parent="DialogBlack/NextIcon" index="0"]
 position = Vector2( 0, 0 )
 
+[connection signal="dialog_ended" from="DialogBlack" to="." method="_on_dialog_ended"]
+
 [editable path="DialogBlack"]

@@ -110,69 +110,6 @@
     ],
     "next": "end"
   },
-  "cross_styx": {
-    "text": [
-      "Hello, sir! Would you like to cross the river?"
-    ],
-    "choices": [
-      {
-        "text": "Yes.",
-        "next": "end",
-        "action": [
-          "play_anim cross_river",
-          "play_sound swish"
-        ]
-      },
-      {
-        "text": "No.",
-        "next": "end",
-        "action": [
-          "set has_river_talked true"
-        ]
-      },
-      {
-        "text": "Wait. You're a talking boat?",
-        "next": "styx_talked",
-        "show_only_if": "data has_river_talked is true"
-      }
-    ],
-  },
-  "styx_talked": {
-    "text": [
-      "Yes,| &,| indeed...| I am."
-    ],
-  },
-  "crossed_styx": {
-    "text": [
-      "Sorry, buddy, I'm a one-way boat."
-    ],
-    "next": [
-      "end"
-    ]
-  },
-  "bunny_quest": {
-    "name": "Moon Bunny",
-    "icon": "bunny_default",
-    "voice": "bunny",
-    "text": [
-      "Boy, have you got my mochi?"
-    ],
-    "choices": [
-      {
-        "text": "No",
-        "next": "bunny_quest_not_done",
-        "show_only_if": "player inventory does_not_have mochi"
-      },
-      {
-        "text": "Yes",
-        "next": "bunny_quest_done",
-        "action": [
-          "player inventory remove 1 mochi"
-        ],
-        "show_only_if": "player inventory has mochi"
-      }
-    ],
-  },
   "opening_scene": {
     "name": "King",
     "icon": "king",
@@ -196,7 +133,7 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=10]But alas,| I have lost it in our castle's deepest,| darkest,| dungeon.||Who knows what foul beasts await ye|...poisonous rats,| traps,| winged beasts,| ghoulies|..........Where was I? [/shake]"
+      "[shake rate=10 level=10]But alas,| I have lost it in our castle's deepest,| darkest,| dungeon.|| Who knows what foul beasts await ye|...poisonous rats,| traps,| winged beasts,| ghoulies|..........Where was I? [/shake]"
     ],
     "next": "os_4"
   },
@@ -205,20 +142,17 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=10]Oh yes.|| I require your aid -|| gather your courage for the journey,| vanquish the evil that lurks below,|rise to your place among the Hall of the Greats,| and return the CROWN||........What say you?||[/shake]"
+      "[shake rate=10 level=10]Oh yes.|| I require your aid -|| gather your courage for the journey,| vanquish the evil that lurks below,| rise to your place among the Hall of the Greats,| and return the CROWN||........What say you?||[/shake]"
     ],
     "choices": [
       {
-        "text": "Yes, my liege. I will stop at nothing to retrieve the crown!",
+        "text": "Yes, my liege. I will retrieve the crown!",
         "next": "boring_spiel_accept"
       },
       {
         "text": "Can you repeat that? I wasn't paying attention...",
         "next": "boring_spiel_decline"
-      },
-    ],
-    "action": [
-      "screen shake"
+      }
     ]
   },
   "boring_spiel_accept": {
@@ -226,7 +160,7 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=10]You are very brave indeed,| now heed these words of wisdom!|| I am reminded of the time when,| as a young boy,| I got stuck in a thicket with a sweetroll my mother gave me..||It was quite prickly||...the thicket,| not the sweetroll||...and it ripped a hole right in my...[/shake]"
+      "[shake rate=10 level=10]You are very brave indeed,| now heed these words of wisdom:|| I am reminded of the time when,| as a young boy,| I got stuck in a thicket with a sweetroll my mother gave me..||It was quite prickly||...the thicket,| not the sweetroll||...and it ripped a hole right in my...[/shake]"
     ],
     "action": [
       "play_anim Sleep"
@@ -250,91 +184,29 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=10]...|The next thing you know...|||......bananaas and milk...|...........scraping mud off my boots......|.....|it was the funniest thing..........|And that's how I obtained 5 loaves of bread from the market that day...|[/shake]"
+      "[shake rate=10 level=10]...|The next thing you know...|||......bananas and milk...|...........scraping mud off my boots......|..........|it was the funniest thing ye know?.............|And that's how I obtained 5 loaves of bread from the market that day...|[/shake]"
+    ],
+    "choices": [
+      {
+        "text": "You are very wise, Your Majesty",
+        "next": "onward"
+      },
+      {
+        "text": "I'm going to go now...",
+        "next": "onward"
+      }
     ],
     "action": [
       "play_anim Sleep"
-    ],
-    "next": "end"
-  },
-
-  "bunny_quest_not_done": {
-    "name": "Moon Bunny",
-    "icon": "bunny_closed_eyes",
-    "voice": "bunny",
-    "text": [
-      "Don't keep me waiting, boy."
-    ],
-    "next": "end"
-  },
-  "bunny_quest_done": {
-    "name": "Moon Bunny",
-    "icon": "bunny_default",
-    "voice": "bunny",
-    "text": [
-      "Wonderful!"
-    ],
-    "next": "end"
-  },
-  "pickup_mochi": {
-    "voice": "item",
-    "text": [
-      "You picked up a mochi!"
-    ],
-    "action": [
-      "player inventory add 1 mochi",
-      "play_sound item_pickup"
     ]
   },
-  "tweet": {
-    "name": "Tweety",
-    "voice": "bird",
-    "icon": "bird",
+  "onward": {
+    "name": "King",
+    "icon": "king",
+    "voice": "king",
     "text": [
-      "Hey yo! Have you heard about the new tweet?"
+      "[shake rate=10 level=10]Onward, stalwart knight!|[/shake]"
     ],
-    "choices": [
-      {
-        "text": "No. Tell me more.",
-        "next": "tweet_joke"
-      },
-      {
-        "text": "Yes, no need to say anymore.",
-        "next": "tweet_no_joke"
-      },
-    ],
-    "action": [
-      "screen shake"
-    ]
-  },
-  "tweet_no_joke": {
-    "name": "Tweety",
-    "voice": "bird",
-    "icon": "bird",
-    "text": [
-      "Aw c'mon man, I was just try'n to make a joke. Play along, you big ol' sop."
-    ],
-  },
-  "tweet_joke": {
-    "name": "Tweety",
-    "voice": "bird",
-    "icon": "bird",
-    "text": [
-      "Well, they just couldn't stop tweeting! | \n [shake rate=5 level=10] HAHA!! | HAHA!![/shake]",
-      "Well? Did you like it?"
-    ],
-    "choices": [
-      {
-        "text": "Yes! Tell me more.",
-        "next": "tweet"
-      },
-      {
-        "text": "No, I don't understand...",
-        "next": "tweet_no_joke"
-      },
-    ],
-    "action": [
-      "screen shake"
-    ],
+    "next": "end"
   }
 }

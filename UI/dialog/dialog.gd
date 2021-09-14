@@ -118,10 +118,10 @@ func resize_control_nodes():
 func continue_dialog():
 	# Case 1: text was mid printing, so we want to skip text animation and show rest of text
 	if text_not_all_visible():
-		pass
-#		print("text midprint")
-#		text_dialog.visible_characters = text_dialog.bbcode_text.length()
-#		show_choices()
+#		pass
+		print("text midprint")
+		text_dialog.visible_characters = text_dialog.bbcode_text.length()
+		show_choices()
 	else:
 		print("text end")
 		# Case 2: text was done printing, so we want to go to next portion of dialog
