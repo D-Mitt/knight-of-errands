@@ -59,7 +59,7 @@ alignment = "CENTER"
 position = Vector2( 45.1898, 45.1899 )
 scale = Vector2( 10, 10 )
 animation = "king"
-frame = 2
+frame = 1
 
 [node name="VBox" parent="DialogBlack/TextBox/Margin/HBox" index="1"]
 margin_right = 617.0

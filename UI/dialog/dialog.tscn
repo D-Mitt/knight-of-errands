@@ -184,7 +184,8 @@ __meta__ = {
 [node name="Icon" type="AnimatedSprite" parent="TextBox/Margin/HBox/PanelContainer"]
 position = Vector2( 45, 55 )
 frames = SubResource( 16 )
-animation = "bunny_closed_eyes"
+animation = "king"
+frame = 3
 playing = true
 
 [node name="VBox" type="VBoxContainer" parent="TextBox/Margin/HBox"]

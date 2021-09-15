@@ -32,8 +32,8 @@ script = ExtResource( 5 )
 
 [node name="SleepyDust" parent="." instance=ExtResource( 9 )]
 
-[connection signal="game_started" from="StartScreen" to="." method="_on_StartScreen_game_started"]
 [connection signal="game_started" from="StartScreen" to="Introduction" method="_on_StartScreen_game_started"]
+[connection signal="game_started" from="StartScreen" to="." method="_on_StartScreen_game_started"]
 [connection signal="intro_completed" from="Introduction" to="." method="_on_Introduction_intro_completed"]
 [connection signal="completed_level" from="Dungeon" to="." method="_on_Dungeon_completed_level"]
 [connection signal="completed_level" from="Dungeon" to="EndingScreen" method="_on_Dungeon_completed_level"]

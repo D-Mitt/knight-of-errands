@@ -242,7 +242,7 @@
     "voice": "king",
     "delay_start": 2,
     "text": [
-      "[shake rate=10 level=10]This reminds me of the time when,| as a new recruit, |I was tasked with hunting down a bear....|....Did I mention it was the second week of the month so the lunar festival was about to begin.......|........|Honey as far as the eye could see|[/shake]"
+      "[shake rate=10 level=10]...This reminds me of the time when,| as a new recruit, |I was tasked with hunting down a bear....|....Did I mention it was the second week of the month so the lunar festival was about to begin.......|........|Honey as far as the eye could see...|[/shake]"
     ],
     "choices": [
       {

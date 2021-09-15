@@ -101,8 +101,11 @@ func set_curr(id):
 		# Set choice buttons.
 		choices.hide()
 		choices.set_buttons(curr_dialog_node.choices)
-		# Resize control nodes and show dialog_UI.
-		resize_control_nodes()
+		# Resize control nodes and show dialog_UI. Don't need it in my case
+		#resize_control_nodes()
+		#Only hide on beginning of cutscenes - should make this beginning of cutscene variable
+		if id == "opening_scene" || id == "king_praise_1":
+			dialog_UI.hide()
 		# TODO: Decide whether actions should be executed at start or end of dialog.
 		# Currently, executes actions at start of dialog, but after initialization of dialog.
 		for act in curr_dialog_node.action:
@@ -116,6 +119,9 @@ func resize_control_nodes():
 		dialog_UI.show()
 
 func continue_dialog():
+	#Set visible once talking starts
+	if dialog_UI.visible != true:
+		dialog_UI.show()
 	# Case 1: text was mid printing, so we want to skip text animation and show rest of text
 	if text_not_all_visible():
 #		pass
@@ -170,9 +176,11 @@ func _on_timer_timeout():
 	# If starting delay is not done, run it
 	if !curr_dialog_node.delay_start_complete && curr_dialog_node.delay_start >= 0:
 		curr_dialog_node.delay_start_complete = true
+		dialog_UI.hide()
 		timer.stop()
 		yield(get_tree().create_timer(curr_dialog_node.delay_start), "timeout")
 		timer.start()
+		dialog_UI.show()
 	
 	var force_voice = true if text_dialog.visible_characters == 0 else false
 	if text_not_all_visible():
