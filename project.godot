@@ -38,16 +38,6 @@ _global_script_classes=[ {
 "class": "SpacerContainer",
 "language": "GDScript",
 "path": "res://UI/dialog/spacer_container.gd"
-}, {
-"base": "StaticBody2D",
-"class": "TalkableItem",
-"language": "GDScript",
-"path": "res://Assets/Items/TalkableItem.gd"
-}, {
-"base": "StaticBody2D",
-"class": "environmentObj",
-"language": "GDScript",
-"path": "res://Assets/Enviro/Bush.gd"
 } ]
 _global_script_class_icons={
 "AnimatedSpriteContainer": "",
@@ -55,9 +45,7 @@ _global_script_class_icons={
 "DialogChoices": "",
 "DialogNode": "",
 "DialogSound": "",
-"SpacerContainer": "",
-"TalkableItem": "",
-"environmentObj": ""
+"SpacerContainer": ""
 }
 
 [application]
