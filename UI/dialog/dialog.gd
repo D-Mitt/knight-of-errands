@@ -163,7 +163,6 @@ func show_choices():
 
 # Focus on first button choice if exists.
 func focus_first_choice():
-	print("focus first choice")
 	Globals.remove_sleep()
 	var choices_container = choices.get_child(0)
 	if choices_container.get_child_count() > 0:

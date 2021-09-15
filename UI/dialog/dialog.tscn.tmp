@@ -187,7 +187,7 @@ __meta__ = {
 position = Vector2( 45, 55 )
 frames = SubResource( 4 )
 animation = "king"
-frame = 4
+frame = 2
 playing = true
 
 [node name="VBox" type="VBoxContainer" parent="TextBox/Margin/HBox"]

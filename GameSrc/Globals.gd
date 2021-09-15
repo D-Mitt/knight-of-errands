@@ -151,7 +151,6 @@ func LoadFile(file_name):
 	file.close()
 	
 func remove_sleep():
-	print("removing sleep!")
 	emit_signal("remove_sleep")
 	
 func add_sleep():

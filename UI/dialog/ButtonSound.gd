@@ -1,7 +1,7 @@
 extends AudioStreamPlayer
 
-var chosen = preload("res://Audio/pickup_crown_2.wav")
-var hovering = preload("res://Audio/move.wav")
+var chosen = preload("res://Audio/SFX/pickup_crown_2.wav")
+var hovering = preload("res://Audio/SFX/move.wav")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

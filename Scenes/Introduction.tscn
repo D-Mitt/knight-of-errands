@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Cutscene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Introduction.gd" type="Script" id=2]
+
+[node name="Introduction" type="Node2D"]
+script = ExtResource( 2 )
+talk_id = "opening_scene"
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 1 )]

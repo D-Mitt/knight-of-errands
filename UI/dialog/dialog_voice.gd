@@ -14,15 +14,12 @@ Dependencies: Global.db_voices
 extends AudioStreamPlayer2D
 class_name DialogSound
 
-var default = preload("res://Audio/move.wav")
-var robot = preload("res://Audio/Voices/robot.wav")
-var doop = preload("res://Audio/Voices/doop.wav")
-var chirp = preload("res://Audio/Voices/chirp.wav")
+var default = preload("res://Audio/SFX/move.wav")
 var king = preload("res://Audio/Voices/king_2.wav")
 
 var voice_id := ""
 var sound = default
-var rate := 500			# Letters + 1 to display before emitting a sound; the rate of speech.
+var rate := 5			# Letters + 1 to display before emitting a sound; the rate of speech.
 var pitch := 1.2			# Pitch effect applied to base voice sound stream.
 var pitch_range := 0.25	# Range of pitch of voice.
 var letters_played := 0	# Tracks letters played so far.
