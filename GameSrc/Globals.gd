@@ -7,6 +7,8 @@ extends Node
 signal play_animation(animation)
 signal play_sound(sound)
 signal screen_shake
+signal add_sleep
+signal remove_sleep
 
 export var dialog_file = "res://Data/Dialogue.json"
 export var voices_file = "res://Data/Voices.json"
@@ -46,6 +48,8 @@ func execute(act):
 			print("WARNING: action " + act + " not set appropriately. Expected two words." + \
 					"Recieved " + str(act_parsed.size()))
 		emit_signal("play_animation", act_parsed[1])
+		if act_parsed[1] == "Sleep":
+			emit_signal("add_sleep")
 	elif command == "play_sound":
 		# Second word is the sound to play
 		if act_parsed.size() != 2:
@@ -145,3 +149,10 @@ func LoadFile(file_name):
 	else:
 		print("File Open Error: could not open file " + file_name)
 	file.close()
+	
+func remove_sleep():
+	print("removing sleep!")
+	emit_signal("remove_sleep")
+	
+func add_sleep():
+	emit_signal("add_sleep")

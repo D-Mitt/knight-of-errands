@@ -9,6 +9,9 @@ func _ready():
 	set_process(false)
 	hide()
 	$CanvasLayer/Control.hide()
+	$CanvasLayer/Control/sleep.hide()
+	Globals.connect("add_sleep", self, "_on_add_sleep")
+	Globals.connect("remove_sleep", self, "_on_remove_sleep")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,3 +25,9 @@ func _on_StartScreen_game_started():
 func _on_dialog_ended(_text_id):
 	UI.disconnect("dialog_ended", self, "_on_dialog_ended")
 	emit_signal("intro_completed")
+	
+func _on_add_sleep():
+	$CanvasLayer/Control/sleep.show()
+	
+func _on_remove_sleep():
+	$CanvasLayer/Control/sleep.hide()

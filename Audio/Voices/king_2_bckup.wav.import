@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/king_2_bckup.wav-96b408ca6ab71d21539a319562604921.sample"
+
+[deps]
+
+source_file="res://Audio/Voices/king_2_bckup.wav"
+dest_files=[ "res://.import/king_2_bckup.wav-96b408ca6ab71d21539a319562604921.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

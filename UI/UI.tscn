@@ -51,15 +51,14 @@ margin_bottom = 257.0
 
 [node name="PanelContainer" parent="DialogBlack/TextBox/Margin/HBox" index="0"]
 margin_top = 66.0
-margin_bottom = 165.0
+margin_bottom = 171.0
 custom_styles/panel = SubResource( 3 )
 alignment = "CENTER"
 
 [node name="Icon" parent="DialogBlack/TextBox/Margin/HBox/PanelContainer" index="0"]
 position = Vector2( 45.1898, 45.1899 )
 scale = Vector2( 10, 10 )
-animation = "king"
-frame = 1
+frame = 3
 
 [node name="VBox" parent="DialogBlack/TextBox/Margin/HBox" index="1"]
 margin_right = 617.0

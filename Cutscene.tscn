@@ -1,7 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/knight_2.png" type="Texture" id=1]
 [ext_resource path="res://Assets/king.png" type="Texture" id=2]
+[ext_resource path="res://Assets/sleep_1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/sleep_0.png" type="Texture" id=4]
+[ext_resource path="res://Assets/sleep_3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/sleep_2.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 layer = 2
@@ -41,3 +53,10 @@ color = Color( 0.286275, 0.270588, 0.270588, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="sleep" type="AnimatedSprite" parent="Control"]
+position = Vector2( 252.554, 190.819 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+frame = 3
+playing = true

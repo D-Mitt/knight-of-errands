@@ -11,6 +11,6 @@
 
 "bird" : {"rate" : 4, "sound" : "chirp", "pitch": 1, "pitch_range" : 0.2 },
 
-"king" : {"rate": 4, "sound" : "king", "pitch": 1, "pitch_range": 0.2},
+"king" : {"rate": 5, "sound" : "king", "pitch": 1, "pitch_range": 0.2},
 
 }

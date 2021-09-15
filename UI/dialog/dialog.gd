@@ -110,6 +110,7 @@ func set_curr(id):
 		# Currently, executes actions at start of dialog, but after initialization of dialog.
 		for act in curr_dialog_node.action:
 			Globals.execute(act)
+				
 		
 # Resizes dialog UI to fit content.
 func resize_control_nodes():
@@ -142,7 +143,7 @@ func continue_dialog():
 					# - (B) We need to move to next_id if no choices
 					set_curr(curr_dialog_node.next_id)
 				else:
-					# - (C) Show choices if there are choces
+					# - (C) Show choices if there are choices
 					choices.show()
 					focus_first_choice()
 			# Needed for when new text appears after choices.
@@ -162,6 +163,8 @@ func show_choices():
 
 # Focus on first button choice if exists.
 func focus_first_choice():
+	print("focus first choice")
+	Globals.remove_sleep()
 	var choices_container = choices.get_child(0)
 	if choices_container.get_child_count() > 0:
 		choices_container.get_child(0).call_deferred("grab_focus")
