@@ -24,6 +24,8 @@ var printable_text := ""	# Actual displayed text in text box; it replaces specia
 var pause_counts := {} 		# Counts number of PAUSE_CHAR at given printable char index.
 var choices := []			# Choices player can choose in dialog. (optional)
 var action := []			# Action executed at end of text dialog. (optional)
+var delay_start := 0		# Delay before dialog is played
+var delay_start_complete := false # whether the delay start is complete yet
 	
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -63,6 +65,8 @@ func init(curr_id):
 
 	if "action" in curr_dialog:
 		action = curr_dialog["action"]
+	if "delay_start" in curr_dialog:
+		delay_start = curr_dialog["delay_start"]
 	texts = curr_dialog["text"]
 	var text = texts[text_index]
 	printable_text = convert_printable(text)

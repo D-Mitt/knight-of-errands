@@ -20,24 +20,70 @@ layer = 2
 script = ExtResource( 4 )
 
 [node name="DialogBlack" parent="." instance=ExtResource( 1 )]
-margin_left = 85.0803
-margin_top = 479.244
-margin_right = 639.08
-margin_bottom = 663.244
+margin_left = 33.0
+margin_top = 377.0
+margin_right = 690.0
+margin_bottom = 693.0
 text_speed = 0.06
+
+[node name="HBox" parent="DialogBlack" index="2"]
+margin_right = 657.0
 
 [node name="NameBox" parent="DialogBlack/HBox" index="0"]
 custom_styles/panel = SubResource( 1 )
 
+[node name="Name" parent="DialogBlack/HBox/NameBox/Margin" index="0"]
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.0980392, 0, 0, 1 )
+
 [node name="TextBox" parent="DialogBlack" index="3"]
+margin_right = 657.0
+margin_bottom = 316.0
 custom_styles/panel = SubResource( 2 )
 
+[node name="Margin" parent="DialogBlack/TextBox" index="0"]
+margin_right = 657.0
+margin_bottom = 277.0
+
+[node name="HBox" parent="DialogBlack/TextBox/Margin" index="0"]
+margin_right = 637.0
+margin_bottom = 257.0
+
 [node name="PanelContainer" parent="DialogBlack/TextBox/Margin/HBox" index="0"]
+margin_top = 66.0
+margin_bottom = 165.0
 custom_styles/panel = SubResource( 3 )
+alignment = "CENTER"
 
 [node name="Icon" parent="DialogBlack/TextBox/Margin/HBox/PanelContainer" index="0"]
-scale = Vector2( 5, 5 )
+position = Vector2( 45.1898, 45.1899 )
+scale = Vector2( 10, 10 )
 animation = "king"
+frame = 2
+
+[node name="VBox" parent="DialogBlack/TextBox/Margin/HBox" index="1"]
+margin_right = 617.0
+margin_bottom = 237.0
+
+[node name="Text" parent="DialogBlack/TextBox/Margin/HBox/VBox" index="0"]
+margin_right = 502.0
+margin_bottom = 201.0
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+
+[node name="Choices" parent="DialogBlack/TextBox/Margin/HBox/VBox" index="1"]
+margin_top = 205.0
+margin_right = 502.0
+margin_bottom = 237.0
+
+[node name="VBox" parent="DialogBlack/TextBox/Margin/HBox/VBox/Choices" index="0"]
+margin_right = 502.0
+
+[node name="Button" parent="DialogBlack/TextBox/Margin/HBox/VBox/Choices/VBox" index="0"]
+margin_right = 502.0
+
+[node name="NextIcon" parent="DialogBlack" index="4"]
+position = Vector2( 589.978, 230 )
 
 [node name="Next" parent="DialogBlack/NextIcon" index="0"]
 position = Vector2( 0, 0 )

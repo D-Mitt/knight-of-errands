@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var _transition_rect := get_node("SceneWrapper/SceneTransitionRect")
+onready var _transition_rect := get_node("SceneWrapper/CanvasLayer/Control/SceneTransitionRect")
 
 
 # Called when the node enters the scene tree for the first time.

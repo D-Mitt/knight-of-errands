@@ -119,29 +119,23 @@ func continue_dialog():
 	# Case 1: text was mid printing, so we want to skip text animation and show rest of text
 	if text_not_all_visible():
 #		pass
-		print("text midprint")
 		text_dialog.visible_characters = text_dialog.bbcode_text.length()
 		show_choices()
 	else:
-		print("text end")
 		# Case 2: text was done printing, so we want to go to next portion of dialog
 		if !choices.visible: # Do not set next text if selecting choice.
 			var can_move_to_next_id := !curr_dialog_node.set_next_text_index()
 			if !can_move_to_next_id:
-				print("dandan 1")
 				# - (A) We can move to next text_index 
 				text_dialog.bbcode_text = curr_dialog_node.printable_text
 				text_dialog.visible_characters = 0
 				next_icon.hide()
 				resize_control_nodes()
 			else:
-				print("dandan 2")
 				if curr_dialog_node.choices.size() == 0:
 					# - (B) We need to move to next_id if no choices
-					print("dandan 3")
 					set_curr(curr_dialog_node.next_id)
 				else:
-					print("dandan 4")
 					# - (C) Show choices if there are choces
 					choices.show()
 					focus_first_choice()
@@ -173,6 +167,12 @@ func _on_choice_selected(id):
 
 #======================================Text===================================
 func _on_timer_timeout():
+	# If starting delay is not done, run it
+	if !curr_dialog_node.delay_start_complete && curr_dialog_node.delay_start >= 0:
+		curr_dialog_node.delay_start_complete = true
+		timer.stop()
+		yield(get_tree().create_timer(curr_dialog_node.delay_start), "timeout")
+		timer.start()
 	
 	var force_voice = true if text_dialog.visible_characters == 0 else false
 	if text_not_all_visible():
