@@ -143,7 +143,7 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=10]Oh yes.|| I require your aid -|| gather your courage for the journey,| vanquish the evil that lurks below,| ascend to the place of honor among the Hall of the Greats,| and return the CROWN||........What say you?||[/shake]"
+      "[shake rate=10 level=10]Oh, yes.|| I require your aid, great warrior.|| Gather your courage for the journey,| vanquish the evil that lurks below,| ascend to the place of honor among the Hall of the Greats,| and return the CROWN to it's rightful place on my head||........What say you?||[/shake]"
     ],
     "choices": [
       {
@@ -311,5 +311,15 @@
       "[shake rate=10 level=10]Very Well, valiant knight! Thou bested the foul beasts from below,| and in such quick manner!||| Our kingdom will forever know the journey you took this day.|[/shake]"
     ],
     "next": "king_praise_2"
+  },
+
+  "blocked_stairs": {
+    "name": "King",
+    "icon": "king",
+    "voice": "king",
+    "text": [
+      "[shake rate=10 level=15]DON'T COME UP UNTIL YOU'VE FOUND THE CROWN!||[/shake]"
+    ],
+    "next": "end"
   }
 }

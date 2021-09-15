@@ -47,9 +47,11 @@ func handle_collision(collidedObject):
 				emit_signal("completed_level")
 				
 			else:
-				collider.display_text()
 				$BlockedStairsSound.play()
-				yield($BlockedStairsSound, "finished")
+				set_process(false)
+				set_process_input(false)
+				UI.connect("dialog_ended", self, "_on_dialog_ended")
+				UI.start_dialog("blocked_stairs")
 				
 		else:
 			$WallBonk.play()
@@ -63,3 +65,8 @@ func set_has_crown(holding_crown):
 	
 func get_has_crown():
 	return has_crown
+	
+func _on_dialog_ended(_text_id):
+	UI.disconnect("dialog_ended", self, "_on_dialog_ended")
+	set_process(true)
+	set_process_input(true)

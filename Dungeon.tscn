@@ -1,12 +1,11 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://assets/dungeon_floor.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player.gd" type="Script" id=3]
 [ext_resource path="res://Crown.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Stairs.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Stairs.gd" type="Script" id=6]
-[ext_resource path="res://RichTextLabel.gd" type="Script" id=7]
+[ext_resource path="res://Dungeon.gd" type="Script" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 12, 12, 16, 12, 16, 16, 12, 16 )
@@ -550,6 +549,7 @@ points = PoolVector2Array( 0, 0, 4, 0, 4, 12, 12, 12, 12, 0, 16, 0, 16, 16, 0, 1
 [node name="Dungeon" type="Node2D"]
 scale = Vector2( 5, 5 )
 z_index = 5
+script = ExtResource( 8 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -573,21 +573,6 @@ tile_data = PoolIntArray( -65532, 0, 3, -65531, 0, 131073, -65530, 0, 4, -65529,
 ] instance=ExtResource( 5 )]
 position = Vector2( 72, 216 )
 scale = Vector2( 5, 5 )
-script = ExtResource( 6 )
-
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control/Stairs"]
-margin_left = -11.2
-margin_top = -38.0
-margin_right = 135.8
-margin_bottom = 7.0
-rect_scale = Vector2( 0.4, 0.4 )
-bbcode_enabled = true
-bbcode_text = "[shake]DON'T COME UP UNTIL YOU'VE FOUND THE CROWN![/shake]"
-text = "DON'T COME UP UNTIL YOU'VE FOUND THE CROWN!"
-script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Player" parent="CanvasLayer/Control" groups=[
 "Player",
