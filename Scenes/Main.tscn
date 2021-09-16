@@ -38,12 +38,12 @@ talk_id = "credits"
 
 [node name="SleepyDust" parent="." instance=ExtResource( 1 )]
 
-[connection signal="game_started" from="StartScreen" to="Introduction" method="_on_StartScreen_game_started"]
 [connection signal="game_started" from="StartScreen" to="." method="_on_StartScreen_game_started"]
-[connection signal="show_credits" from="StartScreen" to="Credits" method="_on_StartScreen_show_credits"]
+[connection signal="game_started" from="StartScreen" to="Introduction" method="_on_StartScreen_game_started"]
 [connection signal="show_credits" from="StartScreen" to="." method="_on_Credits_started"]
+[connection signal="show_credits" from="StartScreen" to="Credits" method="_on_StartScreen_show_credits"]
 [connection signal="credits_completed" from="Credits" to="." method="_on_Credits_completed"]
 [connection signal="intro_completed" from="Introduction" to="." method="_on_Introduction_intro_completed"]
-[connection signal="completed_level" from="Dungeon" to="EndingScreen" method="_on_Dungeon_completed_level"]
 [connection signal="completed_level" from="Dungeon" to="." method="_on_Dungeon_completed_level"]
+[connection signal="completed_level" from="Dungeon" to="EndingScreen" method="_on_Dungeon_completed_level"]
 [connection signal="ending_completed" from="EndingScreen" to="." method="_on_EndingScreen_ending_completed"]

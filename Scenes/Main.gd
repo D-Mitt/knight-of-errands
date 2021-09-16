@@ -4,6 +4,7 @@ onready var _transition_rect := get_node("SceneWrapper/CanvasLayer/Control/Scene
 
 func _on_StartScreen_game_started():
 	_transition_rect.transition_to(get_node("StartScreen"), get_node("Introduction"))
+	UI.get_node("DialogBlack")._on_set_text_speed(0.06)
 	
 func _on_Introduction_intro_completed():
 	_transition_rect.transition_to(get_node("Introduction"), get_node("Dungeon"))
@@ -17,7 +18,7 @@ func _on_EndingScreen_ending_completed():
 	
 func _on_Credits_started():
 	_transition_rect.transition_to(get_node("StartScreen"), get_node("Credits"))
-	UI.get_node("DialogBlack")._on_set_text_speed(0.02)
+	UI.get_node("DialogBlack")._on_set_text_speed(0.03)
 
 func _on_Credits_completed():
 	_transition_rect.transition_to(get_node("Credits"), get_node("StartScreen"))
