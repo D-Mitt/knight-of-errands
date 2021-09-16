@@ -58,7 +58,7 @@ alignment = "CENTER"
 [node name="Icon" parent="DialogBlack/TextBox/Margin/HBox/PanelContainer" index="0"]
 position = Vector2( 45.1898, 45.1899 )
 scale = Vector2( 10, 10 )
-frame = 1
+frame = 3
 
 [node name="VBox" parent="DialogBlack/TextBox/Margin/HBox" index="1"]
 margin_right = 617.0

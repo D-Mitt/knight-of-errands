@@ -17,6 +17,12 @@ scale = Vector2( 3, 3 )
 texture = ExtResource( 2 )
 
 [node name="sleep" parent="CanvasLayer/Control" index="5"]
-frame = 3
+frame = 2
+
+[node name="AnimatedSprite" parent="CanvasLayer/Control" index="9"]
+frame = 0
+
+[node name="AnimatedSprite2" parent="CanvasLayer/Control" index="10"]
+frame = 2
 
 [editable path="CanvasLayer"]

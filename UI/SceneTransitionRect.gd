@@ -50,6 +50,7 @@ func show_scene(to_show):
 	if to_show.is_in_group("dungeon"):
 		to_show.get_node("CanvasLayer").get_node("Control").get_node("Player").set_process(true)
 		to_show.get_node("CanvasLayer").get_node("Control").get_node("Player").set_process_input(true)
+		to_show.reset()
 	elif to_show.is_in_group("start"):
 		to_show.get_node("CanvasLayer").get_node("Menu").show()
 		to_show.get_node("CanvasLayer").get_node("Menu").set_process_input(true)

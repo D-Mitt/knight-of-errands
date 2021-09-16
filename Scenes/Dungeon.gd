@@ -11,3 +11,10 @@ func _ready():
 
 func _on_Player_completed_level():
 	emit_signal("completed_level")
+	
+func reset():
+	$CanvasLayer/Control/Player.set_position(Vector2(168, 232))
+	$CanvasLayer/Control/Player.show()
+	$CanvasLayer/Control/Player.set_has_crown(false)
+	$CanvasLayer/Control/Player/Sprite.flip_h = false
+	$CanvasLayer/Control/Crown.show()
