@@ -125,7 +125,7 @@ func continue_dialog():
 		dialog_UI.show()
 	# Case 1: text was mid printing, so we want to skip text animation and show rest of text
 	if text_not_all_visible():
-#		pass
+#		pass // dmitt change this before shipping
 		text_dialog.visible_characters = text_dialog.bbcode_text.length()
 		show_choices()
 	else:

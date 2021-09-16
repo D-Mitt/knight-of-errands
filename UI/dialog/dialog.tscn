@@ -32,12 +32,12 @@ border_width_right = 5
 border_width_bottom = 5
 border_color = Color( 0.517647, 0.517647, 0.517647, 1 )
 
-[sub_resource type="StreamTexture" id=8]
+[sub_resource type="StreamTexture" id=4]
 load_path = "res://.import/TestIcon.png-58ca70981da2b27a0f3951afa6fb4487.stex"
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ SubResource( 8 ) ],
+"frames": [ SubResource( 4 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -53,15 +53,14 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=6]
 size = 20
 outline_size = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=7]
 
-[sub_resource type="Animation" id=7]
-resource_name = "Idle"
+[sub_resource type="Animation" id=8]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -185,7 +184,7 @@ __meta__ = {
 
 [node name="Icon" type="AnimatedSprite" parent="TextBox/Margin/HBox/PanelContainer"]
 position = Vector2( 45, 55 )
-frames = SubResource( 4 )
+frames = SubResource( 5 )
 animation = "king"
 frame = 4
 playing = true
@@ -203,8 +202,8 @@ margin_bottom = 69.0
 rect_clip_content = false
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/mono_font = SubResource( 5 )
-custom_fonts/bold_italics_font = SubResource( 6 )
+custom_fonts/mono_font = SubResource( 6 )
+custom_fonts/bold_italics_font = SubResource( 7 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 bbcode_enabled = true
 bbcode_text = "Dialogue text goes here."
@@ -252,7 +251,7 @@ centered = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="NextIcon/Next"]
 autoplay = "Idle"
-anims/Idle = SubResource( 7 )
+anims/Idle = SubResource( 8 )
 
 [node name="ButtonSound" type="AudioStreamPlayer" parent="."]
 volume_db = -5.0
@@ -261,5 +260,5 @@ script = ExtResource( 14 )
 [node name="Sound" parent="." instance=ExtResource( 11 )]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="choice_selected" from="TextBox/Margin/HBox/VBox/Choices" to="ButtonSound" method="_on_choice_selected"]
 [connection signal="choice_selected" from="TextBox/Margin/HBox/VBox/Choices" to="." method="_on_choice_selected"]
+[connection signal="choice_selected" from="TextBox/Margin/HBox/VBox/Choices" to="ButtonSound" method="_on_choice_selected"]

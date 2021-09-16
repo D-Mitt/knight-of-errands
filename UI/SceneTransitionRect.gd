@@ -34,6 +34,10 @@ func hide_scene(to_hide):
 	if to_hide.is_in_group("dungeon"):
 		to_hide.get_node("CanvasLayer").get_node("Control").set_process(false)
 		to_hide.get_node("CanvasLayer").get_node("Control").set_process_input(false)
+	elif to_hide.is_in_group("start"):
+		to_hide.get_node("CanvasLayer").get_node("Menu").hide()
+		to_hide.get_node("CanvasLayer").get_node("Menu").set_process_input(false)
+		to_hide.get_node("CanvasLayer").get_node("Menu").set_process(false)
 	
 func show_scene(to_show):
 	to_show.set_process(true)
@@ -46,3 +50,7 @@ func show_scene(to_show):
 	if to_show.is_in_group("dungeon"):
 		to_show.get_node("CanvasLayer").get_node("Control").get_node("Player").set_process(true)
 		to_show.get_node("CanvasLayer").get_node("Control").get_node("Player").set_process_input(true)
+	elif to_show.is_in_group("start"):
+		to_show.get_node("CanvasLayer").get_node("Menu").show()
+		to_show.get_node("CanvasLayer").get_node("Menu").set_process_input(true)
+		to_show.get_node("CanvasLayer").get_node("Menu").set_process(true)

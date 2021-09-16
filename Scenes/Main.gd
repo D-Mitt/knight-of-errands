@@ -2,12 +2,6 @@ extends Node2D
 
 onready var _transition_rect := get_node("SceneWrapper/CanvasLayer/Control/SceneTransitionRect")
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
 func _on_StartScreen_game_started():
 	_transition_rect.transition_to(get_node("StartScreen"), get_node("Introduction"))
 	

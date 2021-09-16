@@ -13,11 +13,6 @@ func _ready():
 	Globals.connect("add_sleep", self, "_on_add_sleep")
 	Globals.connect("remove_sleep", self, "_on_remove_sleep")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	pass
-
 func _on_StartScreen_game_started():
 	UI.connect("dialog_ended", self, "_on_dialog_ended")
 	UI.start_dialog(talk_id)
