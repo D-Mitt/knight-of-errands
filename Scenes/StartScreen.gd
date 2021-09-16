@@ -1,16 +1,19 @@
 extends Node2D
 
 signal game_started
+signal show_credits
+signal choice_selected
 
 export var talk_id = "0"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	set_process(true)
-#	$CanvasLayer/Control/ColorRect/Button.text = "START"
+	$CanvasLayer/Menu/VBox/HBoxContainer/Buttons/StartButton.call_deferred("grab_focus")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	if Input.is_action_just_pressed("confirm"):
-		emit_signal("game_started")
+func _on_CreditsButton_pressed():
+	emit_signal("show_credits")
+	emit_signal("choice_selected", "credits")
 
+func _on_StartButton_pressed():
+	emit_signal("game_started")
+	emit_signal("choice_selected", "start")

@@ -72,7 +72,6 @@ __meta__ = {
 position = Vector2( 252.554, 190.819 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 1 )
-frame = 2
 playing = true
 
 [node name="Sprite3" type="Sprite" parent="Control"]
@@ -98,6 +97,7 @@ position = Vector2( 704, 216 )
 scale = Vector2( 5, 5 )
 z_index = 1
 frames = SubResource( 2 )
+frame = 2
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Control"]
@@ -105,5 +105,5 @@ position = Vector2( 16, 216 )
 scale = Vector2( 5, 5 )
 z_index = 1
 frames = SubResource( 2 )
-frame = 2
+frame = 1
 playing = true
