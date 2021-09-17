@@ -338,18 +338,18 @@
       
       Youtube|[/shake]"
     ],
-    "choices": [
-      {
-        "text": "Show me more",
-        "next": "credits_2"
-      },
-      {
-        "text": "Go back",
-        "next": "end"
-      }
-    ]
+    "next": "credits_2",
   },
   "credits_2": {
+    "name": "King",
+    "icon": "king_crown",
+    "voice": "king",
+    "text": [
+      "[shake rate=10 level=5]Game made using the Godot engine. License can be found here: https://godotengine.org/license[/shake]"
+    ],
+    "next": "credits_3"
+  },
+  "credits_3": {
     "name": "King",
     "icon": "king_crown",
     "voice": "king",
