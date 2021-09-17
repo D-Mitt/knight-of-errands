@@ -16,4 +16,4 @@ func _on_dialog_ended(_text_id):
 
 func _on_StartScreen_show_credits():
 	UI.connect("dialog_ended", self, "_on_dialog_ended")
-	UI.start_dialog(talk_id)
+	UI.start_dialog(talk_id, "credits")

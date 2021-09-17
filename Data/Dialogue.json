@@ -116,7 +116,7 @@
     "voice": "king",
     "delay_start": 3,
     "text": [
-      "[shake rate=10 level=7]Brave Knight,| I have called you here today| in our darkest| hour!||[/shake]"
+      "[shake rate=10 level=6]Brave Knight,| I have called you here today| in our darkest| hour!||[/shake]"
     ],
     "next": "os_2"
   },
@@ -125,7 +125,7 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=7]For countless generations| the crown has been a symbol of strength,| fortitude,| and happiness.||[/shake]"
+      "[shake rate=10 level=6]For countless generations| the crown has been a symbol of strength,| fortitude,| and happiness.||[/shake]"
     ],
     "next": "os_3"
   },
@@ -134,7 +134,7 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=7]But alas,| I have lost it in our castle's deepest,| darkest,| dungeon.|| Who knows what foul beasts await ye|...poisonous rats,| traps,| winged beasts,| ghoulies|..........Where was I? [/shake]"
+      "[shake rate=10 level=6]But alas,| I have lost it in our castle's deepest,| darkest,| dungeon.|| Who knows what foul beasts await ye|...poisonous rats,| traps,| winged beasts,| ghoulies|..........Where was I? [/shake]"
     ],
     "next": "os_4"
   },
@@ -144,7 +144,7 @@
     "voice": "king",
     "delay_start": 2,
     "text": [
-      "[shake rate=10 level=7]Oh, yes.|| I require your aid, great warrior.|| Gather your courage for the journey,| vanquish the evil that lurks below,| ascend to the place of honor among the Hall of the Greats,| and return the CROWN to it's rightful place on my head||........What say you?||[/shake]"
+      "[shake rate=10 level=6]Oh, yes.|| I require your aid, great warrior.|| Gather your courage for the journey,| vanquish the evil that lurks below,| ascend to the place of honor among the Hall of the Greats,| and return the CROWN to it's rightful place on my head||........What say you?||[/shake]"
     ],
     "choices": [
       {
@@ -166,7 +166,7 @@
     "voice": "king",
     "delay_start": 2,
     "text": [
-      "[shake rate=10 level=7]You are very brave indeed,| now heed these words of wisdom:|| I am reminded of the time when,| as a young boy,| I got stuck in a thicket with a sweetroll my mother gave me..||It was quite prickly||...the thicket,| not the sweetroll||...and it ripped a hole right in my...[/shake]"
+      "[shake rate=10 level=6]You are very brave indeed,| now heed these words of wisdom:|| I am reminded of the time when,| as a young boy,| I got stuck in a thicket with a sweetroll my mother gave me..||It was quite prickly||...the thicket,| not the sweetroll||...and it ripped a hole right in my...[/shake]"
     ],
     "action": [
       "play_anim Sleep"
@@ -179,7 +179,7 @@
     "voice": "king",
     "delay_start": 2,
     "text": [
-      "[shake rate=10 level=7]Very Well,| listen closely.|| I am reminded of the time when,| as a young boy,| I got stuck in a thicket with a sweetroll my mother gave me..||It was quite prickly||...the thicket,| not the sweetroll||...and it ripped a hole right in my...[/shake]"
+      "[shake rate=10 level=6]Very Well,| listen closely.|| I am reminded of the time when,| as a young boy,| I got stuck in a thicket with a sweetroll my mother gave me..||It was quite prickly||...the thicket,| not the sweetroll||...and it ripped a hole right in my...[/shake]"
     ],
     "action": [
       "play_anim Sleep"
@@ -192,7 +192,7 @@
     "voice": "king",
     "delay_start": 1,
     "text": [
-      "[shake rate=10 level=7]...|The next thing you know...|||......bananas and milk...|...........scraping mud off my boots......|..........|it was the funniest thing ye know?.............|And that's how I obtained 5 loaves of bread from the market that day...|[/shake]"
+      "[shake rate=10 level=6]...|The next thing you know...|||......bananas and milk...|...........scraping mud off my boots......|..........|it was the funniest thing ye know?.............|And that's how I obtained 5 loaves of bread from the market that day...|[/shake]"
     ],
     "choices": [
       {
@@ -213,7 +213,7 @@
     "icon": "king",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=7]Onward, stalwart knight!|[/shake]"
+      "[shake rate=10 level=6]Onward, stalwart knight!|[/shake]"
     ],
     "next": "end"
   },
@@ -224,7 +224,7 @@
     "voice": "king",
     "delay_start": 3,
     "text": [
-      "[shake rate=10 level=7]O valiant knight! Thou bested the foul beasts from below,| and in such quick manner!||| Our kingdom will forever know the journey you took this day.|[/shake]"
+      "[shake rate=10 level=6]O valiant knight! Thou bested the foul beasts from below,| and in such quick manner!||| Our kingdom will forever know the journey you took this day.|[/shake]"
     ],
     "next": "king_praise_2"
   },
@@ -233,7 +233,7 @@
     "icon": "king_crown",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=7]As thanks,| please except this lucky coin I found in my courtyard this morning! Don't spend it all in one place,||| ho ho!|[/shake]"
+      "[shake rate=10 level=6]As thanks,| please except this lucky coin I found in my courtyard this morning! Don't spend it all in one place,||| ho ho!|[/shake]"
     ],
     "next": "king_praise_3"
   },
@@ -243,7 +243,7 @@
     "voice": "king",
     "delay_start": 1,
     "text": [
-      "[shake rate=10 level=7]...This reminds me of the time when,| as a new recruit, |I was tasked with hunting down a bear....|....Did I mention it was the second week of the month so the lunar festival was about to begin.......|........|Honey as far as the eye could see...|[/shake]"
+      "[shake rate=10 level=6]...This reminds me of the time when,| as a new recruit, |I was tasked with hunting down a bear....|....Did I mention it was the second week of the month so the lunar festival was about to begin.......|........|Honey as far as the eye could see...|[/shake]"
     ],
     "choices": [
       {
@@ -265,7 +265,7 @@
     "voice": "king",
     "delay_start": 1,
     "text": [
-      "[shake rate=10 level=7]...The night was filled with whimsy......|..........I was 40 years young,| ho ho........|...... Suddenly skeleton mages surrounded us......|........I had a tummy ache that night,| but I still ate the entire pie! |||HO HO!|[/shake]"
+      "[shake rate=10 level=6]...The night was filled with whimsy......|..........I was 40 years young,| ho ho........|...... Suddenly skeleton mages surrounded us......|........I had a tummy ache that night,| but I still ate the entire pie! |||HO HO!|[/shake]"
     ],
     "choices": [
       {
@@ -287,7 +287,7 @@
     "voice": "king",
     "delay_start": 1,
     "text": [
-      "[shake rate=10 level=7]...It had the aroma of sweaty feet and rotting pumpkins......|.........At that time I came across an acient rune with great power........|......I can't think of anything else......|........WELL DONE,| YOU ARE A TRUE GAMER!|[/shake]"
+      "[shake rate=10 level=6]...It had the aroma of sweaty feet and rotting pumpkins......|.........At that time I came across an ancient rune with great power........|......I can't think of anything else......|........WELL DONE,| YOU ARE A TRUE GAMER!|[/shake]"
     ],
     "choices": [
       {
@@ -309,7 +309,7 @@
     "voice": "king",
     "delay_start": 1,
     "text": [
-      "[shake rate=10 level=7]Very Well, valiant knight! Thou bested the foul beasts from below,| and in such quick manner!||| Our kingdom will forever know the journey you took this day.|[/shake]"
+      "[shake rate=10 level=6]Very Well, valiant knight! Thou bested the foul beasts from below,| and in such quick manner!||| Our kingdom will forever know the journey you took this day.|[/shake]"
     ],
     "next": "king_praise_2"
   },
@@ -325,36 +325,42 @@
   },
 
   "credits": {
-    "name": "King",
+    "name": "",
     "icon": "king_crown",
     "voice": "king",
     "delay_start": 3,
     "text": [
-      "[shake rate=10 level=8]Dialog system adapted from Qin Tina|
+      "Dialog system by Qin Tina|
       
-      Github (https://github.com/QueenChristina)|
+      > Github (https://github.com/QueenChristina)|
       
-      Twitter|
+      > Twitter|
       
-      Youtube|[/shake]"
+      > Youtube|"
     ],
-    "next": "credits_2",
+    "next": "credits_2"
   },
   "credits_2": {
-    "name": "King",
+    "name": "",
     "icon": "king_crown",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=5]Game made using the Godot engine. License can be found here: https://godotengine.org/license[/shake]"
+      "This game uses Godot Engine, available under the following license:
+
+        Copyright (c) 2007-2021 Juan Linietsky, Ariel Manzur. Copyright (c) 2014-2021 Godot Engine contributors.
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
     ],
     "next": "credits_3"
   },
   "credits_3": {
-    "name": "King",
+    "name": "",
     "icon": "king_crown",
     "voice": "king",
     "text": [
-      "[shake rate=10 level=8]Game created by Me[/shake]"
+      "[shake rate=10 level=5]Game created by: Me[/shake]"
     ],
     "next": "end"
   }

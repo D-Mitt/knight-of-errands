@@ -18,7 +18,7 @@ func _on_EndingScreen_ending_completed():
 	
 func _on_Credits_started():
 	_transition_rect.transition_to(get_node("StartScreen"), get_node("Credits"))
-	UI.get_node("DialogBlack")._on_set_text_speed(0.03)
+	UI.get_node("Credits")._on_set_text_speed(0.01)
 
 func _on_Credits_completed():
 	_transition_rect.transition_to(get_node("Credits"), get_node("StartScreen"))
